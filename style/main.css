@@ -1,0 +1,151 @@
+/*declarando variável*/
+:root{
+    --vermelho:#E50914;
+    --preta:#141414;
+}
+
+/*reiniciação de CSS*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Elementos Básicos*/
+
+body{
+    background: var(--preta);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+/*Caixa com o nome "Netflix" e os links*/
+header .container{
+    /*Utilização do "flexbox", maneira de alinhas os elementos em tela*/
+    display: flex;
+    flex-direction: row;
+    /*alinhando elementos no centro*/
+    align-items: center;
+    /*Criando um Espaço entre NETFLIX e a barra de navegação */
+    justify-content: space-between;
+}
+/*Editando Logo*/
+header .logo{
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+    /*"desgrudando" o logo do canto superior esquerdo"*/
+    margin-left: 5px;
+}
+/*modificando os links*/
+header nav a{
+    /*decoração das palavras*/
+    text-decoration: none;
+    /*cor das palavras*/
+    color: #AAA;
+    /*espaçamento entre palavras*/
+    margin-right: 10px;
+}
+/*Quando passar o mouse em cima dos links, ele muda a cor*/
+header nav a:hover{
+color: #fff;
+}
+
+/*Filme Principal*/
+
+.filme-principal{
+    /*tamanho da fonte*/
+    font-size: 16px;
+    /*inserindo imagem de fundo*/
+    /*Criando camada entre texto e imagem, destacando texto*/
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),url('/img/capa-house.jpg');
+    /*Tamanho da imagem*/
+    height: 400px;
+    /*deixando imagem do tamanho da "caixa"*/
+    background-size: cover;
+
+    /*modificando elementos*/
+    display: flex;
+    /*deixando o flex em coluna*/
+    flex-direction: column;
+    /*deixar centealizado,deixar no meio da coluna*/
+    justify-content: center;
+    /*elementos comecem sempre a esquerda*/
+    align-items: flex-start;
+
+}
+.filme-principal .descricao{
+    /*espaçamento na descrição*/
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+/*Editando Titulo*/
+.titulo{
+    margin-top: 15%;
+    /*tamanho do titulo*/
+    font-size: 40px;
+    /*Estilo da fonte*/
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+/*Editando botões*/
+.botao{
+    /*cor*/
+    background-color: rgba(0,0,0,.50);
+    /*tirando valores pdrões da borda*/
+    border: none;
+    /*cor da letras*/
+    color: white;
+    /*Espaço interno do elemento*/
+    padding:15px 30px;
+    /*espaçamento entre botoes*/
+    margin-right: 15px;
+    /*tamanho da fonte*/
+    font-size: 12px;
+    /*Muda o formato do mouse*/
+    cursor: pointer;
+    /*transição entre animação*/
+    transition: .3s ease all;
+}
+/*quando o mouse passar pelo botão, esse efeito acontece*/
+.botao:hover{
+    /*quando passo mouse*/
+    background-color: white;
+    /*quando retira o mouse*/
+    color: black;
+    
+}
+.botao svg{
+    margin-right: 5px;
+}
+
+.container{
+    margin-left: 20px;
+}
+.filme-principal.container{
+    width: 70%
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.carrossel-filmes{
+    margin-top: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
